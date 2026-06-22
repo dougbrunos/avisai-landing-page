@@ -1,0 +1,36 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg94126" viewBox="295 320 440 125" version="1.1">
+  <metadata id="metadata94132">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <defs id="defs94130"></defs>
+  <linearGradient spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient2-logo-3ed6715f-c7d5-49b8-9442-6139ff93020f">
+    <stop id="stop94107" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+    <stop id="stop94109" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+  </linearGradient>
+  <linearGradient gradientTransform="rotate(-30)" spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient3-logo-3ed6715f-c7d5-49b8-9442-6139ff93020f">
+    <stop id="stop94112" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+    <stop id="stop94114" stop-opacity="1" stop-color="#cccccc" offset="50%"></stop>
+    <stop id="stop94116" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+  </linearGradient>
+  <g id="logo-group">
+    <image xlink:href="" id="container" x="272" y="144" width="480" height="480" style="display: none;" transform="translate(0 0)"></image>
+    <g id="logo-center" transform="translate(0 0)">
+      <image xlink:href="" id="icon_container" style="display: none;" x="0" y="0"></image>
+      <g id="slogan" style="font-style:normal;font-weight:500;font-size:32px;line-height:1;font-family:Raleway;font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)"></g>
+      <g id="title" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)">
+        <path id="path94135" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="M 413.83587,-54.072 440.90787,0 H 429.96388 L 413.83587,-33.984 397.77987,0 h -10.944 l 27,-54.072 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#51a8ed" stroke="#51a8ed" transform="translate(0 325.07812) translate(307.00582165000003 13.77176) scale(1.67) translate(-386.83587 54.072)"></path>
+        <path id="path94137" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 477.77638,-54 h 10.00799 l -27,54 -27,-54 h 10.94401 l 16.05599,34.056 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#5eb1ef" stroke="#5eb1ef" transform="translate(0 325.07812) translate(385.4098166500001 13.89200000000001) scale(1.67) translate(-433.78437 54)"></path>
+        <path id="path94139" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 497.12862,-54 h 8.928 V 0 h -8.928 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#6bbaf1" stroke="#6bbaf1" transform="translate(0 325.07812) translate(491.1947141500001 13.89200000000001) scale(1.67) translate(-497.12862 54)"></path>
+        <path id="path94141" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 537.88288,-31.968 q 0.576,0.072 1.94399,0.288 1.44001,0.216 3.168,0.864 1.80001,0.576 3.672,1.584 1.872,1.008 3.38401,2.808 1.51199,1.728 2.51999,4.248 1.00801,2.52 1.00801,6.048 0,0.144 -0.144,1.44 -0.072,1.224 -0.64801,3.024 -0.576,1.8 -1.728,3.816 -1.15199,2.016 -3.31199,3.816 -2.16001,1.728 -5.47201,2.88 -3.23999,1.152 -7.992,1.152 -4.39199,0 -8.35199,-1.8 -3.88801,-1.872 -6.69601,-5.112 l 7.34401,-5.688 q 0,0.072 0.50399,0.648 0.576,0.576 1.584,1.224 1.08001,0.648 2.664,1.224 1.65601,0.504 3.88801,0.504 4.10399,0 6.408,-2.088 2.304,-2.16 2.304,-5.04 0,-2.088 -0.86401,-3.384 -0.864,-1.368 -2.376,-2.16 -1.44,-0.864 -3.384,-1.296 -1.87199,-0.504 -4.032,-0.936 -0.57599,-0.072 -1.944,-0.36 -1.29599,-0.288 -2.952,-0.936 -1.58399,-0.648 -3.384,-1.656 -1.72799,-1.08 -3.168,-2.664 -1.36799,-1.656 -2.304,-3.888 -0.936,-2.304 -0.936,-5.4 0,-0.144 0.072,-1.296 0.144,-1.224 0.648,-2.88 0.57601,-1.728 1.72801,-3.672 1.22399,-1.944 3.38399,-3.528 2.16001,-1.656 5.40001,-2.736 3.312,-1.08 8.064,-1.08 4.39199,0 8.35199,1.872 3.96001,1.872 6.76801,5.112 l -7.34401,5.688 q -0.79199,-1.368 -2.232,-2.088 -1.43999,-0.792 -2.88,-1.152 -1.72799,-0.36 -3.672,-0.432 -4.10399,0 -6.408,1.656 -2.304,1.584 -2.304,4.536 0,2.088 0.72001,3.312 0.72,1.152 1.94399,1.8 1.29601,0.648 3.096,1.008 1.80001,0.288 3.96001,0.72 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#77c4f4" stroke="#77c4f4" transform="translate(0 325.07812) translate(527.02999165 13.89200000000001) scale(1.67) translate(-518.58687 54)"></path>
+        <path id="path94143" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="M 586.24212,-54.072 613.31412,0 H 602.37013 L 586.24212,-33.984 570.18612,0 h -10.944 l 27,-54.072 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#84cdf6" stroke="#84cdf6" transform="translate(0 325.07812) translate(594.92425915 13.77176) scale(1.67) translate(-559.24212 54.072)"></path>
+        <path id="path94145" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Meedori Sans';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 623.40988,-54 h 8.928 V -6.984 L 623.40988,0 Z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#91d6f8" stroke="#91d6f8" transform="translate(0 325.07812) translate(702.0844183500001 13.89200000000001) scale(1.67) translate(-623.40988 54)"></path>
+      </g>
+      <image xlink:href="" id="icon" style="display: none;" x="0" y="0"></image>
+    </g>
+  </g>
+</svg>
