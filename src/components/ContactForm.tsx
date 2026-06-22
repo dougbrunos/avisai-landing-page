@@ -65,17 +65,13 @@ export default function ContactForm() {
       </label>
 
       <div className="recaptcha campo-completo">
-        {chaveRecaptcha ? (
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey={chaveRecaptcha}
-            onChange={concluirDesafio}
-            onExpired={() => setDesafioConcluido(false)}
-            onErrored={() => setDesafioConcluido(false)}
-          />
-        ) : (
-          <p className="status-formulario">Configure a chave pública do reCAPTCHA.</p>
-        )}
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={chaveRecaptcha}
+          onChange={concluirDesafio}
+          onExpired={() => setDesafioConcluido(false)}
+          onErrored={() => setDesafioConcluido(false)}
+        />
       </div>
 
       <button
