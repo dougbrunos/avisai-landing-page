@@ -886,6 +886,18 @@ h3 {
   width: 100%;
 }
 
+.formulario-contato .botao:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+  transform: none;
+}
+
+.recaptcha {
+  min-height: 78px;
+  overflow-x: auto;
+  padding: 2px 0;
+}
+
 .status-formulario {
   min-height: 24px;
   color: var(--azul-principal);

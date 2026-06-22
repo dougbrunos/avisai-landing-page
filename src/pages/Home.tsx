@@ -1,5 +1,6 @@
 import ave from '../assets/ave.png'
 import logo from '../assets/logo.svg'
+import ContactForm from '../components/ContactForm'
 
 export default function Home() {
   return (
@@ -252,39 +253,7 @@ export default function Home() {
               </p>
             </div>
 
-            <form
-              className="formulario-contato"
-              onSubmit={async (evento) => {
-                evento.preventDefault()
-
-                const formulario = evento.currentTarget
-                const dados = new FormData(formulario)
-
-                const resposta = await fetch('/api/send-email', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({
-                    nameContact: dados.get('nameContact'),
-                    email: dados.get('email'),
-                    message: dados.get('message'),
-                  }),
-                })
-
-                if (resposta.ok) {
-                  formulario.reset()
-                } else {
-                  console.error('Não foi possível enviar a mensagem.')
-                }
-              }}
-            >
-              <input type="hidden" name="form-name" value="contato" />
-              <label>Nome<input type="text" name="nameContact" autoComplete="nameContact" required /></label>
-              <label>E-mail<input type="email" name="email" autoComplete="email" required /></label>
-              <label className="campo-completo">Mensagem<textarea name="message" rows={5} /></label>
-              <button className="botao botao-primario campo-completo" type="submit">Enviar</button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>

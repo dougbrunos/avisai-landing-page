@@ -5,6 +5,11 @@ interface ContactPayload {
     email: string;
     nameContact: string;
     message: string;
+    recaptchaToken: string;
+}
+
+interface RecaptchaResponse {
+    success: boolean;
 }
 
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN ?? "";
@@ -46,14 +51,14 @@ const handler: Handler = async (event: HandlerEvent) => {
         };
     }
 
-    const { email, nameContact, message } = payload;
+    const { email, nameContact, message, recaptchaToken } = payload;
 
-    if (!email?.trim() || !nameContact?.trim() || !message?.trim()) {
+    if (!email?.trim() || !nameContact?.trim() || !message?.trim() || !recaptchaToken?.trim()) {
         return {
             statusCode: 422,
             headers: corsHeaders(origin),
             body: JSON.stringify({
-                error: "Campos obrigatórios: email, nameContact, message."
+                error: "Campos obrigatórios: email, nameContact, message e recaptchaToken."
             }),
         };
     }
@@ -64,6 +69,33 @@ const handler: Handler = async (event: HandlerEvent) => {
             statusCode: 422,
             headers: corsHeaders(origin),
             body: JSON.stringify({ error: "E-mail inválido." }),
+        };
+    }
+
+    const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
+    if (!recaptchaSecret) {
+        return {
+            statusCode: 500,
+            headers: corsHeaders(origin),
+            body: JSON.stringify({ error: "reCAPTCHA não configurado no servidor." }),
+        };
+    }
+
+    const recaptchaVerification = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+            secret: recaptchaSecret,
+            response: recaptchaToken,
+        }),
+    });
+    const recaptchaResult = await recaptchaVerification.json() as RecaptchaResponse;
+
+    if (!recaptchaResult.success) {
+        return {
+            statusCode: 403,
+            headers: corsHeaders(origin),
+            body: JSON.stringify({ error: "Falha na validação do reCAPTCHA." }),
         };
     }
 
