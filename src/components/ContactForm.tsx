@@ -1,5 +1,11 @@
 import { useRef, useState, type FormEvent } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { toast } from 'react-toastify'
+
+interface RespostaEnvio {
+  message?: string
+  error?: string
+}
 
 export default function ContactForm() {
   const chaveRecaptcha = import.meta.env.VITE_RECAPTCHA_SITE_KEY
@@ -35,12 +41,16 @@ export default function ContactForm() {
           recaptchaToken: tokenRecaptcha,
         }),
       })
+      const resultado = await resposta.json().catch(() => ({})) as RespostaEnvio
 
       if (resposta.ok) {
         formulario.reset()
+        toast.success(resultado.message ?? 'Mensagem enviada com sucesso!')
       } else {
-        console.error('Não foi possível enviar a mensagem.')
+        toast.error(resultado.error ?? 'Não foi possível enviar a mensagem.')
       }
+    } catch {
+      toast.error('Falha de conexão. Tente novamente em alguns instantes.')
     } finally {
       setEnviando(false)
       recaptchaRef.current?.reset()

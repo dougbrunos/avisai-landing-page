@@ -906,6 +906,18 @@ h3 {
   text-align: center;
 }
 
+.Toastify__toast {
+  border: 1px solid var(--linha-borda);
+  border-radius: 8px;
+  box-shadow: var(--sombra-suave);
+  color: var(--texto-principal);
+  font-family: inherit;
+}
+
+.Toastify__progress-bar--success {
+  background: var(--azul-principal);
+}
+
 .rodape {
   padding: 46px 0 28px;
   color: #dbeafe;
