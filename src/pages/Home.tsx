@@ -252,10 +252,16 @@ export default function Home() {
               </p>
             </div>
 
-            <form className="formulario-contato" aria-label="Formulário de contato">
-              <label>Nome<input type="text" name="nome" autoComplete="name" required /></label>
+            <form
+              className="formulario-contato"
+              name="contato"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="contato" />
+              <label>Nome<input type="text" name="nameContact" autoComplete="nameContact" required /></label>
               <label>E-mail<input type="email" name="email" autoComplete="email" required /></label>
-              <label className="campo-completo">Mensagem<textarea name="mensagem" rows={5} /></label>
+              <label className="campo-completo">Mensagem<textarea name="message" rows={5} /></label>
               <button className="botao botao-primario campo-completo" type="submit">Enviar</button>
             </form>
           </div>
