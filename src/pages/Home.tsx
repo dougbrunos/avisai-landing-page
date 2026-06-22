@@ -254,9 +254,30 @@ export default function Home() {
 
             <form
               className="formulario-contato"
-              name="contato"
-              method="POST"
-              data-netlify="true"
+              onSubmit={async (evento) => {
+                evento.preventDefault()
+
+                const formulario = evento.currentTarget
+                const dados = new FormData(formulario)
+
+                const resposta = await fetch('/api/send-email', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                    nameContact: dados.get('nameContact'),
+                    email: dados.get('email'),
+                    message: dados.get('message'),
+                  }),
+                })
+
+                if (resposta.ok) {
+                  formulario.reset()
+                } else {
+                  console.error('Não foi possível enviar a mensagem.')
+                }
+              }}
             >
               <input type="hidden" name="form-name" value="contato" />
               <label>Nome<input type="text" name="nameContact" autoComplete="nameContact" required /></label>
